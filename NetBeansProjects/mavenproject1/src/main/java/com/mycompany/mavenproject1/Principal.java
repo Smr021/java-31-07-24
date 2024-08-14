@@ -11,16 +11,18 @@ package com.mycompany.mavenproject1;
 public class Principal {
 
     public static void main(String[] args) {
-        Clientes cliente = new Clientes();
+       Veiculos carro = new Veiculos("pka5653", "azul", 4, 50.0, 200.0, 11.4);
+       
+       Cliente cliente1 = new Cliente("Marta", 22, "6499262069", "Rua A", "7565626");
+       
+        System.out.println("Dados do veiculo: ");
+        System.out.println("Placa " + carro.getPlaca());
+        System.out.println("Cor " + carro.getCor());
+        System.out.println("Numero de passageiros " + carro.getNumero_de_passageiros());
         
-        //cliente.nome = "Marta";
-        //cliente.idade = 20;
-        
-        cliente.setNome("Marta"); //Metodo de acesso
-        cliente.setIdade(20);
-        
-        
-        System.out.println("Nome: " + cliente.getNome());
-        System.out.println("Idade: " + cliente.getIdade() + " anos");
     }
+    
+    
+    
+    
 }

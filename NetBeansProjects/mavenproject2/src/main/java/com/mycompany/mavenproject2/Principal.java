@@ -11,15 +11,13 @@ package com.mycompany.mavenproject2;
 public class Principal {
 
     public static void main(String[] args) {
-        Funcionarios funcionario = new Funcionarios("Marta", 20, 1560);
+        Endereco salva = new Endereco("Rua a", "36", "Salvador");
+        Cliente b = new Cliente("Marta", "46",salva);
         
-        //funcionario.setNome("Marta");
-        //funcionario.setIdade(20);
-        //funcionario.setSalario(1560);
-        
-        
-        System.out.println("O nome do Funcionario é : " + funcionario.getNome());
-        System.out.println("A idade do Funcionario é : " + funcionario.getIdade());
-        System.out.printf("O salario do Funcionario é : %.2f%n", funcionario.getSalario());
+        System.out.println("Nome " + b.getNome());
+        System.out.println("Idade: " + b.getIdade());
+        System.out.println("Cidade: " + b.getEndereco().getLogradouro());
+        System.out.println("Numero: " + b.getEndereco().getNumero());
+        System.out.println("Cidade: " + b.getEndereco().getCidade());
     }
 }

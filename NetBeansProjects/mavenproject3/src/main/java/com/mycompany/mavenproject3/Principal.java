@@ -11,11 +11,17 @@ package com.mycompany.mavenproject3;
 public class Principal {
 
     public static void main(String[] args) {
-        Livros livro = new Livros("A pedra", "Bill Gran", 5, 149.99);
+        Cliente cliente1 = new Cliente("Marta", "74 anos",
+                new Pet("noen", "3 anos", "Vira lata"));
+                                     
         
-        System.out.println("O titulo de o livro " + livro.getTitulo());
-        System.out.println("O autor: " + livro.getAutor());
-        System.out.println("O numeros de paginas: " + livro.getNumeroDePaginas());
-        System.out.printf("O preço: %.2f reais %n", livro.getPreco());
+        System.out.println("Nome do cliente : " + cliente1.getNome());
+        System.out.println("Idade do cliente : " + cliente1.getIdade());
+        System.out.println("============================");
+        
+        System.out.println("Nome do pet do cliente : " + cliente1.getPet().getNome());
+        System.out.println("Idade do pet cliente : " + cliente1.getPet().getIdade());
+        System.out.println("Raça do pet do cliente : " + cliente1.getPet().getRaca());
+       
     }
 }
