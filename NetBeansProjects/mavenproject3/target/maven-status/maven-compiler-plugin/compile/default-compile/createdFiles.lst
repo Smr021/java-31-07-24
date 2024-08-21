@@ -1,3 +1,5 @@
-com\mycompany\mavenproject3\Cliente.class
-com\mycompany\mavenproject3\Pet.class
+com\mycompany\mavenproject3\Engenheiro.class
+com\mycompany\mavenproject3\Medico.class
+com\mycompany\mavenproject3\Motoboy.class
 com\mycompany\mavenproject3\Principal.class
+com\mycompany\mavenproject3\Funcionario.class

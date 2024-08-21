@@ -1,1 +1,4 @@
-com\mycompany\mavenproject2\Mavenproject2.class
+com\mycompany\mavenproject2\Principal.class
+com\mycompany\mavenproject2\Fisica.class
+com\mycompany\mavenproject2\Juridica.class
+com\mycompany\mavenproject2\Pessoa.class

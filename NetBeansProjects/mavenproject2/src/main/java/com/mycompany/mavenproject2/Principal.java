@@ -11,13 +11,10 @@ package com.mycompany.mavenproject2;
 public class Principal {
 
     public static void main(String[] args) {
-        Endereco salva = new Endereco("Rua a", "36", "Salvador");
-        Cliente b = new Cliente("Marta", "46",salva);
+        Juridica pessoaJuridica = new Juridica("00016565", "1656", "Marta Soluções ltda", "74656262");        
+        Fisica pessoaFisica = new Fisica("856465656", "795994995", "45/456/54", "Marta", "795456");
         
-        System.out.println("Nome " + b.getNome());
-        System.out.println("Idade: " + b.getIdade());
-        System.out.println("Cidade: " + b.getEndereco().getLogradouro());
-        System.out.println("Numero: " + b.getEndereco().getNumero());
-        System.out.println("Cidade: " + b.getEndereco().getCidade());
-    }
+        System.out.println(pessoaFisica);
+        
+    } 
 }
