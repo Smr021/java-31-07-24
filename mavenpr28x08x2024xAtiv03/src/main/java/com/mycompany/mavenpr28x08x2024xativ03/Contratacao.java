@@ -11,4 +11,5 @@ package com.mycompany.mavenpr28x08x2024xativ03;
 public interface Contratacao {
     public abstract void admitir(Funcionario funcionario);
     void demitir(Funcionario funcionario);
+    
 }

@@ -33,7 +33,9 @@ public class Diretor extends Funcionario implements Contratacao{
 
     @Override
     public void demitir(Funcionario funcionario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("=== Admitindo Funcionario ===");
+        System.out.println("Dados do funcionario: ");
+        System.out.println(funcionario.toString());
     }
     
     public double getPREMIO(){
@@ -43,7 +45,7 @@ public class Diretor extends Funcionario implements Contratacao{
     @Override
     public String toString() {
         return  super.toString()
-                + "PREMIO=" + PREMIO;
+                + "PREMIO " + PREMIO;
     }
     
 }
