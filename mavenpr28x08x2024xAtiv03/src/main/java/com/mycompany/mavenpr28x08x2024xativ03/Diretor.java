@@ -28,7 +28,7 @@ public class Diretor extends Funcionario implements Contratacao{
     public void admitir(Funcionario funcionario) {
         System.out.println("=== Admitindo Funcionario ===");
         System.out.println("=== Dados do funcionario ===");
-        System.out.println(funcionario.toString() );
+        System.out.println(funcionario.toString());
     }
 
     @Override
